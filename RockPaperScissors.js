@@ -11,6 +11,7 @@ function solve(playerTurm){
     } else {
         console.log("Invalid Input. Try Again...");
     }
+
     let computerRandomNumber=Math.floor(Math.random()*3)+1;
     let computerMove;
     switch (computerRandomNumber) {
@@ -26,6 +27,7 @@ function solve(playerTurm){
         default:
             break;
     }
+    
     console.log(`You choose ${playerTurm}`);
     console.log(`The computer chooses ${computerMove}`);
     if (playerTurm === computerMove) {
